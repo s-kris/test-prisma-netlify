@@ -8,9 +8,9 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@prisma/client": "^2.18.0",
+    "@prisma/client": "^2.20.0",
     "next": "latest",
-    "prisma": "^2.18.0",
+    "prisma": "^2.20.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
