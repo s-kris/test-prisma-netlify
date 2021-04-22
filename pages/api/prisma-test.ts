@@ -6,7 +6,7 @@ import path from 'path'
 const prisma = new PrismaClient({
 //@ts-ignore
 __internal: {
-    engine: {binaryPath: path.join(__dirname, "query-engine-rhel-openssl-1.0.x")}
+    engine: {binaryPath: path.join(__dirname, "prisma/query-engine-rhel-openssl-1.0.x")}
   }
 })
 
