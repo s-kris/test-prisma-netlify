@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next'
 import { PrismaClient } from '@prisma/client'
 import path from 'path'
 
+// add path in prisma init config as test fix for https://github.com/prisma/prisma/issues/6051
 const prisma = new PrismaClient({
 //@ts-ignore
 __internal: {
