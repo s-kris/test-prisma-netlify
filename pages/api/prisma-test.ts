@@ -1,7 +1,13 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { PrismaClient } from '@prisma/client'
+import path from 'path'
 
-const prisma = new PrismaClient()
+const prisma = new PrismaClient({
+//@ts-ignore
+__internal: {
+    engine: {binaryPath: path.join(__dirname, "query-engine-rhel-openssl-1.0.x")}
+  }
+})
 
 const handler = async (_req: NextApiRequest, res: NextApiResponse) => {
   try {
